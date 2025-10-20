@@ -4,3 +4,4 @@ pub mod memory;
 pub mod fs;
 pub mod security;
 pub mod ipc;
+pub mod shell;

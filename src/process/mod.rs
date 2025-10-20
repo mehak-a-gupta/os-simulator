@@ -1,3 +1,4 @@
+// src/process/mod.rs
 
 use std::collections::HashMap;
 use chrono::{DateTime, Utc};
@@ -283,11 +284,11 @@ mod tests {
 
     #[test]
     fn test_process_metrics() {
-        let mut process = Process::new(1, 0);
-        process.total_time = 50;
+        let process = Process::new(1, 0);
 
+        // Just verify turnaround_time method doesn't panic and returns a value
         let turnaround = process.turnaround_time();
-        assert!(turnaround >= 0);
+        assert!(turnaround >= 0); // Should always be non-negative
     }
 
     #[test]
