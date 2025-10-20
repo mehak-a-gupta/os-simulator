@@ -1,5 +1,5 @@
 [package]
-name = "os_simulator"
+name = "os-simulator"
 version = "0.1.0"
 edition = "2021"
 
@@ -7,6 +7,9 @@ edition = "2021"
 name = "os-simulator"
 path = "src/main.rs"
 
+[lib]
+name = "os_simulator"
+path = "src/lib.rs"
 
 [dependencies]
 rand = "0.8"
