@@ -1,8 +1,10 @@
-// src/scheduler/mod.rs - Restructured with Metrics Module
+// src/scheduler/mod.rs - Restructured with Metrics and Test Suite
 
 pub mod metrics;
+pub mod test_suite;
 
 pub use metrics::{SchedulerStats, ProcessMetrics};
+pub use test_suite::TestResults;
 
 use std::collections::VecDeque;
 
