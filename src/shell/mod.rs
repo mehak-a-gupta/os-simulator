@@ -1,4 +1,19 @@
-// src/shell/mod.rs
+// OS Simulator Interactive Shell
+//
+// This module provides a command-line interface for interacting with the OS simulator.
+// It consists of three main layers:
+//
+// 1. Command Parsing (parse_command)
+//    - Converts user input strings to strongly-typed Command enum
+//    - Type-safe argument parsing
+//
+// 2. Command Execution (Shell::execute)
+//    - Dispatches commands to handlers
+//    - Returns formatted output strings
+//
+// 3. System Management (Shell state)
+//    - Maintains ProcessManager, MLFQScheduler, SchedulerStats
+//    - Tracks overall OS state
 
 use crate::process::{ProcessManager, ProcessState};
 use crate::scheduler::MLFQScheduler;
