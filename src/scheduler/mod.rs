@@ -1,10 +1,12 @@
-// src/scheduler/mod.rs - Restructured with Metrics and Test Suite
+// src/scheduler/mod.rs - Restructured with Metrics, Test Suite, and Programs
 
 pub mod metrics;
 pub mod test_suite;
+pub mod programs;
 
 pub use metrics::{SchedulerStats, ProcessMetrics};
 pub use test_suite::TestResults;
+pub use programs::{Program, ProgramRegistry, ProgramType};
 
 use std::collections::VecDeque;
 
